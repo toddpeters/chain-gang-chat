@@ -74,7 +74,7 @@ router.post("/register", (req, res) => {
               // Sign Token
               jwt.sign(
                 payload,
-                keys.secretOrKey,
+                process.env.secretOrKey,
                 {
                   expiresIn: 31556926, // Number of Seconds in 1 Year
                 },
@@ -127,7 +127,7 @@ router.post("/login", (req, res) => {
         // Sign Token
         jwt.sign(
           payload,
-          keys.secretOrKey,
+          process.env.secretOrKey,
           {
             expiresIn: 31556926, // Number of Seconds in 1 Year
           },

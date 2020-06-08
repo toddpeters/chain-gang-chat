@@ -94,100 +94,100 @@ const Register = props => {
                             isValid,
                             errors,
                         }) => (
-                            <form
-                                onSubmit={handleSubmit}
-                                className={classes.form}
-                            >
-                                <TextField
-                                    id="name"
-                                    className={classes.textField}
-                                    name="name"
-                                    label="Name"
-                                    fullWidth={true}
-                                    variant="outlined"
-                                    margin="normal"
-                                    required={true}
-                                    helperText={touched.name ? errors.name : ''}
-                                    error={touched.name && Boolean(errors.name)}
-                                    value={values.name}
-                                    onChange={handleChange}
-                                />
-
-                                <TextField
-                                    id="username"
-                                    className={classes.textField}
-                                    name="username"
-                                    label="Username"
-                                    fullWidth={true}
-                                    variant="outlined"
-                                    margin="normal"
-                                    required={true}
-                                    helperText={
-                                        touched.username ? errors.username : ''
-                                    }
-                                    error={
-                                        touched.username &&
-                                        Boolean(errors.username)
-                                    }
-                                    value={values.username}
-                                    onChange={handleChange}
-                                />
-
-                                <TextField
-                                    id="password"
-                                    className={classes.textField}
-                                    name="password"
-                                    label="Password"
-                                    fullWidth={true}
-                                    variant="outlined"
-                                    margin="normal"
-                                    required={true}
-                                    helperText={
-                                        touched.password ? errors.password : ''
-                                    }
-                                    error={
-                                        touched.password &&
-                                        Boolean(errors.password)
-                                    }
-                                    value={values.password}
-                                    onChange={handleChange}
-                                    type="password"
-                                />
-
-                                <TextField
-                                    id="password2"
-                                    className={classes.textField}
-                                    name="password2"
-                                    label="Confirm Password"
-                                    fullWidth={true}
-                                    variant="outlined"
-                                    margin="normal"
-                                    required={true}
-                                    helperText={
-                                        touched.password2
-                                            ? errors.password2
-                                            : ''
-                                    }
-                                    error={
-                                        touched.password2 &&
-                                        Boolean(errors.password2)
-                                    }
-                                    value={values.password2}
-                                    onChange={handleChange}
-                                    type="password"
-                                />
-
-                                <Button
-                                    type="submit"
-                                    fullWidth={true}
-                                    variant="contained"
-                                    color="primary"
-                                    className={classes.submit}
+                                <form
+                                    onSubmit={handleSubmit}
+                                    className={classes.form}
                                 >
-                                    Register
+                                    <TextField
+                                        id="name"
+                                        className={classes.textField}
+                                        name="name"
+                                        label="Name"
+                                        fullWidth={true}
+                                        variant="outlined"
+                                        margin="normal"
+                                        required={true}
+                                        helperText={touched.name ? errors.name : ''}
+                                        error={touched.name && Boolean(errors.name)}
+                                        value={values.name}
+                                        onChange={handleChange}
+                                    />
+
+                                    <TextField
+                                        id="username"
+                                        className={classes.textField}
+                                        name="username"
+                                        label="Username"
+                                        fullWidth={true}
+                                        variant="outlined"
+                                        margin="normal"
+                                        required={true}
+                                        helperText={
+                                            touched.username ? errors.username : ''
+                                        }
+                                        error={
+                                            touched.username &&
+                                            Boolean(errors.username)
+                                        }
+                                        value={values.username}
+                                        onChange={handleChange}
+                                    />
+
+                                    <TextField
+                                        id="password"
+                                        className={classes.textField}
+                                        name="password"
+                                        label="Password"
+                                        fullWidth={true}
+                                        variant="outlined"
+                                        margin="normal"
+                                        required={true}
+                                        helperText={
+                                            touched.password ? errors.password : ''
+                                        }
+                                        error={
+                                            touched.password &&
+                                            Boolean(errors.password)
+                                        }
+                                        value={values.password}
+                                        onChange={handleChange}
+                                        type="password"
+                                    />
+
+                                    <TextField
+                                        id="password2"
+                                        className={classes.textField}
+                                        name="password2"
+                                        label="Confirm Password"
+                                        fullWidth={true}
+                                        variant="outlined"
+                                        margin="normal"
+                                        required={true}
+                                        helperText={
+                                            touched.password2
+                                                ? errors.password2
+                                                : ''
+                                        }
+                                        error={
+                                            touched.password2 &&
+                                            Boolean(errors.password2)
+                                        }
+                                        value={values.password2}
+                                        onChange={handleChange}
+                                        type="password"
+                                    />
+
+                                    <Button
+                                        type="submit"
+                                        fullWidth={true}
+                                        variant="contained"
+                                        color="primary"
+                                        className={classes.submit}
+                                    >
+                                        Register
                                 </Button>
-                            </form>
-                        )}
+                                </form>
+                            )}
                     </Formik>
                 </Grid>
                 <Grid item xs={9}>
@@ -196,7 +196,7 @@ const Register = props => {
                             onClick={() => props.handleClick('login')}
                             href="#"
                         >
-                            Already have an account?
+                            Back to Login
                         </Link>
                     </Typography>
                 </Grid>
