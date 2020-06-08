@@ -1,5 +1,5 @@
 {
-    "name": "chain-gang-chat",
+    "name": "chain-gang-chat-server",
     "version": "0.0.1",
     "description": "MERN Stack Based Chat Application",
     "main": "server.js",
@@ -10,12 +10,13 @@
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\""
     },
-    "author": "The Chain Gang",
+    "author": "Quadrito",
     "license": "MIT",
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.0",
-        "concurrently": "^4.1.0",
+        "concurrently": "^4.1.2",
+        "core-js": "^3.6.5",
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
@@ -23,16 +24,16 @@
         "is-empty": "^1.2.0",
         "jsonwebtoken": "^8.5.1",
         "mongodb": "^3.5.8",
-        "mongoose": "^5.5.15",
-        "passport": "^0.4.0",
+        "mongoose": "^5.9.18",
+        "passport": "^0.4.1",
         "passport-jwt": "^4.0.0",
-        "socket.io": "^2.2.0",
-        "validator": "^11.0.0"
+        "socket.io": "^2.3.0",
+        "validator": "^11.1.0"
     },
     "devDependencies": {
         "eslint": "^5.16.0",
-        "eslint-plugin-react": "^7.13.0",
-        "eslint-plugin-react-hooks": "^1.6.0",
-        "nodemon": "^1.19.1"
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "nodemon": "^1.19.4"
     }
 }
